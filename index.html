@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Projects</title>
+    <style>
+        /* Custom styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f8f9fa, #ced4da); /* Gradient background from light gray to a lighter shade */
+            font-family: 'Arial', sans-serif; /* Change font family as needed */
+        }
+
+        h1, h2, h3 {
+            color: #343a40; /* Dark gray text color */
+            font-weight: 600;
+        }
+
+        .profile-section {
+            text-align: center;
+            padding: 50px 0 10px 0;
+            background-color: #ffffff; /* White background */
+        }
+
+        .profile-picture {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .internship-info {
+            color: #6c757d; /* Gray text color */
+            margin-bottom: 20px;
+            font-size :20px;
+        }
+
+        .project-info {
+            color: #495057; /* Dark gray text color */
+        }
+
+        .project-card {
+            position: relative;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            background-color: #ffffff; /* White card background */
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+            z-index: 1;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            z-index: 0;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card-body {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+        }
+
+        a {
+            text-decoration: none;
+            color: #343a40; /* Dark gray text color */
+        }
+
+        a:link:active,
+        a:visited:active {
+            color: #343a40; /* Dark gray text color */
+        }
+        footer {
+            background-color: #f8f9fa ;/* White background */
+            color: #495057; /* Dark gray text color */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            color: #495057; /* Dark gray text color */
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-section">
+        <img src="assets/profile_pic.jpg" alt="Profile Picture" class="profile-picture">
+        
+        <p class="internship-info">Internship at Programming Hub Pvt. Ltd. | Responsibilities: Building responsive landing pages for mobile applications <span style="color: #007bff;">using flutter.</span></p>
+        <p class="project-info">Explore my work below:</p>
+        <h1 class="text-center mb-4">My Work</h1>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-6 mx-auto">
+                <a href="https://survepranav.github.io/health_app_website/#/" target="_blank">
+                    <div class="project-card">
+                        <img src="assets/1.png" alt="Project 1">
+                        <div class="card-body">
+                            <h3 class="card-title">Fitness app landing page</h3>
+                            <p></p>
+                            <p class="card-text">A responsive landing page for a fitness app which provides detailed information about the application and it's features</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 mx-auto">
+                <a href="https://survepranav.github.io/flutter_web_project/#/" target="_blank">
+                    <div class="project-card">
+                        <img src="assets/2.png" alt="Project 2">
+                        <div class="card-body">
+                            <h3 class="card-title">Daily Journal app landing page</h3>
+                            <p></p>
+                            <p class="card-text">A responsive landing page for a daily journal app which provides detailed information about the application and it's features</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 mx-auto">
+                <a href="https://survepranav.github.io/talk_to_god/#/" target="_blank">
+                    <div class="project-card">
+                        <img src="assets/3.png" alt="Project 3">
+                        <div class="card-body">
+                            <h3 class="card-title">Chatbot App landing page</h3>
+                            <p></p>
+                            <p class="card-text">A responsive landing page for a chatbot app which provides detailed information about the application and it's features</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 mx-auto">
+                <a href="https://survepranav.github.io/code_x_app_website/#/" target="_blank">
+                    <div class="project-card">
+                        <img src="assets/4.png" alt="Project 4">
+                        <div class="card-body">
+                            <h3 class="card-title">E-learning app landing page</h3>
+                            <p></p>
+                            <p class="card-text">A responsive landing page for e-learning app which provides detailed information about the application and it's features</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/pranav-surve" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/_pranav_surve_/?next=%2F#" target="_blank">Instagram</a>
+            </div>
+            <p>Pranav Surve  |  pranavsurve009@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
